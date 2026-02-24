@@ -5,25 +5,71 @@ Date: Tue, 20 Dec 2022 12:11:50 +0100
 Subject: [PATCH] Add releases.
 
 ---
- share/metainfo/ballz.appdata.xml.in | 7 +++++++
- 1 file changed, 7 insertions(+)
+ share/metainfo/ballz.appdata.xml.in | 41 ++++++++++++++++++++++++-----------------
+ 1 file changed, 24 insertions(+), 17 deletions(-)
 
 diff --git a/share/metainfo/ballz.appdata.xml.in b/share/metainfo/ballz.appdata.xml.in
-index d846054..4c5d598 100644
+index d846054..d8f79f2 100644
 --- a/share/metainfo/ballz.appdata.xml.in
 +++ b/share/metainfo/ballz.appdata.xml.in
-@@ -43,4 +43,11 @@ acronym for 'TINS is not Speedhack'.
+@@ -14,33 +14,40 @@
+     <content_attribute id="violence-cartoon">mild</content_attribute>
+     <content_attribute id="language-humor">mild</content_attribute>
+   </content_rating>
+-  <_name>B.A.L.L.Z.</_name>
+-  <_summary>Platform/puzzle game where you control a rolling ball</_summary>
++  <name>B.A.L.L.Z.</name>
++  <summary>Platform/puzzle game where you control a rolling ball</summary>
+   <description>
+-    <_p>
+-The game is a platformer with some puzzle elements. You take control
+-of a ball which is genetically modified by the British secret
+-service. Your mission is to rescue captured British soldiers from a
+-prison in Iran.
+-    </_p>
+-    <_p>
+-The game was written in 72 hours for the TINS competition, a
+-competition similar to Speedhack. The name TINS is an recursive
+-acronym for 'TINS is not Speedhack'.
+-    </_p>
++    <p>The game is a platformer with some puzzle elements. You take control
++      of a ball which is genetically modified by the British secret
++      service. Your mission is to rescue captured British soldiers from a
++      prison in Iran.</p>
++    <p>The game was written in 72 hours for the TINS competition, a
++      competition similar to Speedhack. The name TINS is an recursive
++      acronym for 'TINS is not Speedhack'.</p>
+   </description>
+-  <url type="homepage">https://gitlab.com/ballz</url>
++  <url type="homepage">https://gitlab.com/ballz/ballz</url>
++  <url type="vcs-browser">https://gitlab.com/ballz/ballz</url>
+   <url type="donation">https://www.beuc.net/donate/</url>
++  <developer id="io.gitlab.ballz">
++    <name>Ballz</name>
++  </developer>
+   <update_contact>beuc@beuc.net</update_contact>
++  <translation type="gettext">ballz</translation>
+   <screenshots>
+     <screenshot type="default">
+-      <_caption>Level 1 rolling</_caption>
++      <caption>Level 1 rolling</caption>
+       <image>https://gitlab.com/ballz/ballz/uploads/547ffc8af677cb556c5543a2ad081edc/a.png</image>
+     </screenshot>
+     <screenshot>
+-      <_caption>Level select</_caption>
++      <caption>Level select</caption>
+       <image>https://gitlab.com/ballz/ballz/uploads/420c43f27adfce137cd713a5823bec61/b.png</image>
      </screenshot>
    </screenshots>
-  <translation type="gettext">ballz</translation>
-+ <releases>
+- <translation type="gettext">ballz</translation>
++  <releases>
 +    <release version="1.0.4" date="2019-02-17" type="stable"/>
 +    <release version="1.0.3" date="2015-07-27" type="stable"/>
 +    <release version="1.0.2" date="2011-05-28" type="stable"/>
 +    <release version="1.0.1" date="2008-10-16" type="stable"/>
 +    <release version="1.0" date="2007-04-05" type="stable"/>
-+ </releases>
++  </releases>
  </component>
--- 
-2.39.0
+--
+libgit2 1.7.2
 
