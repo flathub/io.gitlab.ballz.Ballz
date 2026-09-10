@@ -1,6 +1,6 @@
 app-id: io.gitlab.ballz.Ballz
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 command: ballz
 rename-icon: ballz
@@ -25,16 +25,17 @@ modules:
   - name: liballegro5
     buildsystem: cmake-ninja
     builddir: true
-    sources:
-      - type: git
-        url: https://github.com/liballeg/allegro5
-        tag: 4.4.3.1
-        commit: 8a386b2754608b66d46f10abf993abf8ab16902d
     config-opts:
       - -DWANT_DOCS=OFF
       - -DWANT_EXAMPLES=OFF
       - -DWANT_TESTS=OFF
       - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+    sources:
+      - type: git
+        url: https://github.com/liballeg/allegro5
+        tag: 4.4.3.1
+        commit: 8a386b2754608b66d46f10abf993abf8ab16902d
+
 
   - name: guichan
     buildsystem: autotools
